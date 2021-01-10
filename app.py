@@ -15,8 +15,8 @@ def home_page():
 
 @app.route('/<name>')
 def profile(name):
-  name1 = ", " + name
-	return render_template('index.html', name=name1)
+  name1 = ", " + str(name)
+	return render_t0emplate('index.html', name=name1)
 
 
 @app.route('/add_numbers', methods=['GET','POST'])
